@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    color-scheme: dark;
+}
+
+*, *::before, *::after {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+
+h1, h2, h4 {
+    text-align: center;
+}
+h3 {
+    color: yellowgreen;
+}
+h3 .note {
+    margin-inline: auto;
+    width: min(65ch, 90%);
+    font-weight: 300;
+    text-align: justify;
+    text-align-last: center;
+    color: #575757;
+}
+
+strong {
+    font-size: inherit;
+    font-weight: 400;
+    color: yellow;
+    margin-right: 0.5rem;
+}
+
+#search {
+    margin-inline: auto;
+    padding: 0.5rem 1rem;
+    width: min(20rem, 100%);
+
+    display: block;
+
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+button#submit-search {
+    padding: 0.5rem 1rem;
+    width: min(8rem, 100%);
+
+    display: block;
+}
+
+article {
+    width: min(100ch, 100%);
+}
+
+#results {
+    border: 1px solid white;
+    border-radius: 1rem;
+
+    transition: 0.2s;
+}
+#results.not-empty {
+    padding: 2rem;
+}
+
+#results ol li {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #b9b9b9;
+    margin-bottom: 1em;
+}
+#results ol li strong {
+    color: #d7d741;
+}
+
+#results ol.not-applicable li {
+    font-size: 0.9rem;
+    line-height: 1;
+    color: #797979;
+    margin-bottom: 0.5em;
+}
+#results ol.not-applicable li strong {
+    color: #a9a953;
+}
